@@ -28,3 +28,70 @@
 // ogrenciListesi.push([2,"ahmet",true])
 // console.log(ogrenciListesi)
 // ogrenciListesi.push([3,"ayse",true])
+// let ogrenciList: (number | string | boolean)[] = [];
+
+//* enums
+
+//  enum Roles{
+//     user,
+//     admin,
+//     guest,
+//     other
+// }
+
+// let currentUser:Roles=Roles.admin
+// console.log(currentUser)
+
+
+// enum Puanlar{
+//     kaldi =10,
+//     zorlaGecti=15,
+//     orta=25,
+//     iyi=50,
+//     pekiyi=80
+// }
+// let herhangibiri:Puanlar=Puanlar.iyi
+// console.log(herhangibiri)
+
+
+ interface Device {
+  id: number
+  name: string
+  info?: string
+  area: AreaTypes
+  areaInfo:AreaInfo
+}
+
+ enum AreaTypes {
+  BUILDING = 'BUILDING',
+  FLOOR = 'FLOOR',
+  ROOM = 'ROOM',
+}
+
+const bulb: Device = {
+id: 1,
+name: 'Bulb 1',
+area: AreaTypes.ROOM,
+areaInfo:{
+    areaID:"a",
+    areaName:"asd",
+    postalCode:45
+}
+}
+
+if(bulb.area === AreaTypes.ROOM) {
+console.log('Device is in room')
+} else if (AreaTypes.FLOOR) {
+console.log('Device is in floor')
+} else {
+console.log('Device is in building')
+}
+interface AreaInfo{
+    
+        areaID:string,
+        areaName:string,
+        postalCode?:number
+
+}
+
+console.log(bulb.area)
