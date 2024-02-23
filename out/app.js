@@ -1,10 +1,5 @@
 "use strict";
-let numb = 5;
-numb = "ali";
-numb = true;
-let x;
-x = 55;
-x = [1, 8, 7];
-let y = numb;
-console.log(y);
-console.log(typeof (y));
+function error(message) {
+    throw new Error(message);
+}
+console.log(error('Hata Oluştu'));

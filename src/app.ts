@@ -7,17 +7,16 @@
 // // num="ali"
 // //  ad= false
 
-
 //  let ogrenciNo:number[]=[];
 //  ogrenciNo.push(1946)
 //  console.log(ogrenciNo)
 // //  ogrenciNo.push("2024")
- 
+
 // let ogrenciAd:string[]=[]
 // ogrenciAd.push("ali")
-// // ogrenciAd.push(false)
+// ogrenciAd.push(false)
 
-// let tuple:[number,string,boolean]=[1,"ali",true]
+// let tuple:[number,string,boolean]=[1,"ali",true,]
 // tuple.push(3)
 // console.log(tuple)
 // tuple.push(false)
@@ -42,7 +41,6 @@
 // let currentUser:Roles=Roles.admin
 // console.log(currentUser)
 
-
 // enum Puanlar{
 //     kaldi =10,
 //     zorlaGecti=15,
@@ -52,7 +50,6 @@
 // }
 // let herhangibiri:Puanlar=Puanlar.iyi
 // console.log(herhangibiri)
-
 
 //  interface Device {
 //   id: number
@@ -87,7 +84,7 @@
 // console.log('Device is in building')
 // }
 // interface AreaInfo{
-    
+
 //         areaID:string,
 //         areaName:string,
 //         postalCode?:number
@@ -96,8 +93,7 @@
 
 // console.log(bulb.area)
 
-
-// //*any type
+//*any type
 // let numb:any=5
 // numb="ali"
 // numb=true
@@ -110,10 +106,44 @@
 // console.log(y)
 // console.log(typeof(y))
 
-
 // //*unknown type
 //  let xyz: unknown= 2023
 // xyz="2004"
-//  let asd: string=xyz,
+
+// console.log(typeof xyz)
+//  let asd: string=xyz
 //  let bool:boolean=xyz
 //  let tip:any=xyz
+
+//* Void
+
+// function greetings():void{
+//   console.log("hi")
+// }
+// greetings()
+
+// //*Never
+// function error(message: string): never {
+//     throw new Error(message);
+//   }
+//   console.log(error('Hata Oluştu'))
+
+//*Union Type
+
+// let sayi:number | string |boolean =5
+// sayi+=10
+// sayi=56
+// sayi="ali"
+// sayi= false
+
+//* type narrowing
+// function checkNumber (n: string | number ):void{
+
+    
+//     if(typeof n == 'string'){
+       
+//     }else{
+//       n.
+//     }
+// } 
+//* Type Aliases
