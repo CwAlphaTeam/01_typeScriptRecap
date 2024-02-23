@@ -147,3 +147,109 @@
 //     }
 // } 
 //* Type Aliases
+
+// type StrNum= string | Number | (number|string)[]
+
+// let toplamDeger: StrNum=105
+// let isimler:StrNum="ahmet"
+
+// let arr:StrNum=[1,2,"a"]
+
+
+//* String Literals
+// type Car= "BMW"|"Fiat"| "Ferrari"
+// let car1:Car="BMW"
+// let car2:Car="ali"
+// //& Intersection
+
+// const car: {
+//     type: string,
+//     model?: string,
+//     readonly year:number,
+//     age(year: number):void,
+//     sunroof: boolean,
+// } = {
+//     type : 'Toyota',
+//     year :2020,
+//     model: 'Corolla',
+//     sunroof: false,
+//     age(year:number):void{
+//         console.log(`Age is ${year - 2009}`)
+//     }
+// }
+
+
+// type Book ={
+//    book_id: number,
+//    book_name:string 
+// }
+
+// type Auhtor={
+//     authorId:number
+//     authorName:string
+//     otherBooks:string[]
+// }
+
+// type Product = Book &Auhtor
+
+// let kitap:Product={
+//     book_id:1,
+//     book_name:"aaa",
+//     authorId:45,
+//     authorName:"bbb",
+//     otherBooks:["a","b"]
+
+// }
+
+// let tekKitap:Book={
+//     book_id:1,
+//     book_name:"mmmm"
+// }
+
+
+
+//*Type assertions
+//  let score : unknown = '350'
+// console.log((<string>score).length)
+// console.log((score as string).length)
+
+// let sayidanStringe:unknown=500.265
+// console.log((sayidanStringe as number).toFixed(1))
+
+// const sel=(mesaj:number,isim:number):string=>{
+//     return  "mesaj+isim"
+// }
+// console.log(sel(1,2))
+
+
+// let getResult =  (username:string, points: number):string => {
+//     return `Hello ${username}  ${points}`
+// } 
+// console.log(getResult("ali",100))
+
+
+//? Overloading
+
+
+//  function add(a:string,b:number):string;
+// function add(a:string,b:string):string;
+// function add(a:number,b:number):number;
+// function add(a:any,b:any):any{
+//     return a+b
+// }
+
+// console.log(add(2,3))
+// console.log(add('Hello', 'World'))
+// console.log(add('Hello', 2)) 
+
+//? Rest parameters
+
+//  function selam4 (mesaj: string, ...isim: string[] ): string{
+
+    
+//         return `${mesaj+ ' '+ isim.join(",")+'!'}`
+// }
+
+
+// console.log(selam4('Merhaba', 'Mark'))
+// console.log(selam4('Merhaba', 'Mark', 'Anthony', 'Ch15')) 

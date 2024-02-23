@@ -1,5 +1,6 @@
 "use strict";
-function error(message) {
-    throw new Error(message);
+function selam4(mesaj, ...isim) {
+    return `${mesaj + ' ' + isim.join(",") + '!'}`;
 }
-console.log(error('Hata Oluştu'));
+console.log(selam4('Merhaba', 'Mark'));
+console.log(selam4('Merhaba', 'Mark', 'Anthony', 'Ch15'));
